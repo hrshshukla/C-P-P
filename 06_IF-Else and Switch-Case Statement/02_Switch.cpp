@@ -10,7 +10,7 @@ int main(){
     switch (age)
     {
     case 69: // A unique special Case
-        cout<< "you are 18 " <<endl;
+        cout<< "you are 69 " <<endl;
         break;
 
     case 0 ... 17: // means from 0 to 17 

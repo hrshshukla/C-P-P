@@ -10,7 +10,7 @@ typedef struct student {
     string name;
     int age;
     float code;
-} stdnt;
+} stdnt;// Alias Declaration 
 
 int main() {
     // Using typedef alias to create a struct variable

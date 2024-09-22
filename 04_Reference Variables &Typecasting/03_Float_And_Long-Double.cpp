@@ -6,7 +6,7 @@ int main(){
     float x = 40.5F;
     long double y = 40.5;
     
-    cout<<"This is float X= 40.5 \t"<<40.5<<endl;
+    cout<<"This is Double X= 40.5 \t"<<40.5<<endl;
     cout<<"This is float X= 40.5f \t"<<40.5f<<endl;
     cout<<"This is float X= 40.5F \t"<<40.5F<<endl;
 

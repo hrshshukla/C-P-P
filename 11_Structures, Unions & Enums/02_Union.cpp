@@ -12,6 +12,7 @@ using namespace std;
         float pounds;   // (4 byte) in pounds
      };
      //  Total size of UNION money = 4 + 4 + 4 = 12 bytes
+     // So if I only choose dollar then size of euro and pounds will not include in my code = Small code = Faster execution 
 
 int main(){
      
@@ -21,8 +22,8 @@ int main(){
     payment_1.dollars = 1000;   // Hum Europe me the aur DOLLAR de rhe hai lekin waha to EURO chalta hai
     payment_1.euros   = 904;    // toh hum ab DOLLAR ko EURO se replace kr dege (Overwrite kr dege)
 
-    cout<< "Payment in Dollars : ("<<payment_1.dollars<<")  <--- this is a garbage value"<<endl; // Ab jab payment hi EURO me hui hai aur DOLLAR bologe to "GRABAGE VALUE" milegi
-    cout<< "Payment in Euro : "<<payment_1.euros<<"<--- 904 Euro = $1000"<<endl; // Ab sahi value milegi 
+    cout<< "Payment in Dollars : "  << payment_1.dollars <<  "  <--- this is a garbage value"<<endl; // Ab jab payment hi EURO me hui hai aur DOLLAR bologe to "GRABAGE VALUE" milegi
+    cout<< "Payment in Euro : "<< payment_1.euros <<"<--- 904 Euro = $1000"<<endl; // Ab sahi value milegi 
     
 
 

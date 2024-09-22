@@ -20,7 +20,7 @@ cout << a << endl;
 
 Options: (1) 50 (2) 51 (3) Error (4) None of these
 Answer: 51
-Explanation: ptr points to a. q points to ptr directly and to a through ptr. *q = value of p = address of a. So, (*q)++ increments the value at the address of a. So a becomes 51 from 50.
+Explanation: ptr points to a. q points to ptr directly and to a through ptr. *q = value of p address, and p = value of a address. So, (*q)++ increments the value at the address of a. So a becomes 51 from 50.
 
 Code
 int *ptr = 0;
@@ -30,7 +30,7 @@ cout << *ptr << endl;
 
 Options: (1) 10 (2) 0 (3) Error (4) None of these
 Answer: Error
-Explanation: at the time of printing, *ptr points to the value of address a which is 10. So Compier thought there is address called "10" like (0x61ff04) nut there isnt any address like that so ERROR.
+Explanation: when compiler search for address "10" which didn't exist in memmory because usually address in memory looks like --> (0x61ff04). Hence "10" cannot be stored in (*ptr) because it doesnt exist = ERRRO
 
 
 Code

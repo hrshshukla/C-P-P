@@ -15,6 +15,8 @@ int main(){
     cout<<"The value of Friday is    :"<< Friday <<endl;
     cout <<endl;
 
+    
+
 
     // Next 
     week day1 = Monday; // Ab maine day1 me Monday store kr lia hai

@@ -1,5 +1,5 @@
 #include <iostream>
-// SAWDHAAN IS KHEL ME ARTHIK JOKHIM SAMBHAB HAI AUR ISKI ADAT BHI LAG SAKTI HAI 
+// SAVDHAAN IS KHEL ME ARTHIK JOKHIM SAMBHAB HAI AUR ISKI ADAT BHI LAG SAKTI HAI 
 using namespace std;
 
 int main(){
@@ -15,6 +15,7 @@ int main(){
     
     
  //Output 
+//   value of marks [0]   :98
 //   value of marks [1]   :82
 //   value of marks [2]   :63
 //   value of marks [3]   :46

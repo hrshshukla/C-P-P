@@ -12,7 +12,7 @@ int main(){
     int x, y, z;
     x = 2;
     y = 144;
-    z = 8000; //this is a 4 digit number.  will use setw(4)
+    z = 8000; //this is a biggest number and have 4 digit number.  will use setw(4)
     
     cout<< "Without (setw)" <<endl;
     cout<< "The value of \"x\" without setw : "<<x<<endl;

@@ -11,8 +11,11 @@ int main(){
     
     // Here BY DEFAULT "40.5" is a DOUBLE
 
-    float a = 40.5f;// Converting it into FLOAT through "f"
-    cout << "The value of a " << a << "the value of x = " << x<< endl;
+     float a = 40.5f;// Converting it into FLOAT through "f"
+    
+    cout << "The size of y " << sizeof(y) <<endl << "the value of x = " << sizeof(x)<< endl;
+    cout << "the size of a = " << sizeof(a)<< endl;
+
 
     return 0;
 }

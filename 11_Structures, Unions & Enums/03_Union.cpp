@@ -6,7 +6,7 @@ using namespace std;
 // Creating UNION
     union money {
         int dollars;   
-        char euros[10]; //
+        int euros; //
         float pounds;   
      };
      
@@ -16,12 +16,10 @@ int main(){
     // Creating a union variable
     union money payment_1;
     
-    payment_1.dollars = $1000; 
-    payment_1.euro    = 280;
+    payment_1.dollars = 1000; 
+    payment_1.euros = 280;
 
-    cout<< "Payment made in : "<<payment_1.euro<<endl;
-
-
+    cout<< "Payment made in : "<<payment_1.euros<<endl;
 
     
     return 0;
