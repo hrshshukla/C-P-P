@@ -9,7 +9,7 @@ int main(){
     
     cout<< "Printing value of marks with for loop" <<endl;
     for(int i=0; i<4; i++){
-    int *a = &marks[i];
+    int* a = &marks[i];
     cout << "value of marks ["<<i<<"]   :" <<*a<< endl;
     }
     
