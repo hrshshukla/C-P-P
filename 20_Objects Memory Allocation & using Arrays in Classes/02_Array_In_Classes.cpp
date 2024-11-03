@@ -12,7 +12,7 @@ class shop
     public:
 
         void initialize_itemCount(void);
-        void setPrice(void);
+        void setPrice_ID(void);
         void display(void);
     
     };
@@ -22,7 +22,7 @@ class shop
 
 
 // Function to store ID and PRICE 
-    void shop :: setPrice(void){
+    void shop :: setPrice_ID(void){
         cout << "Enter Item ID : " << endl;
         cin>>itemID[itemCount]; // Jo item number counting me chal rha hai uski ID store krega, Agli baar Item 1 hojayega q ki (itemCount ++) neeche kia hai
 
@@ -47,10 +47,10 @@ int main(){
     shop kirana;
 
     kirana.initialize_itemCount();
-    kirana.setPrice(); // Isko ek baar likhne se sirf ek hi item ko store kr payege, Toh hum use krege loop is function ko call krne ke liye
+    kirana.setPrice_ID(); // Isko ek baar likhne se sirf ek hi item ko store kr payege, Toh hum use krege loop is function ko call krne ke liye
     
      for (int i = 0; i < num_of_item; i++) {
-        kirana.setPrice();
+        kirana.setPrice_ID();
     }
     
     kirana.display();
