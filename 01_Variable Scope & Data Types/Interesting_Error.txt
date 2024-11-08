@@ -1,4 +1,0 @@
-Error Beacause of File Name : 
-
-we cannot use  special characters like &, |, <, >, ?, *, and \ in file names
-when you plan to use them in command-line operations to keep things simple and avoid potential errors.
