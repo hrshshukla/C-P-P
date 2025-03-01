@@ -16,5 +16,11 @@ int main(){
         cout<<i<<endl; // Print from 0 to infinite
     }
 
+    for (; ;) // NO (declaration and intialization), NO Condition, NO Updation
+    {
+        cout << "print infinite";
+    }
+    
+
     return 0;
 }

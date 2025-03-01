@@ -7,6 +7,7 @@ using namespace std;
 inline int multiply(int a, int b){  // "inline" add krn hai
     return a*b; // Iska answer compiler return kr dega compiling ki time pe hi
 }
+
 int main(){
     int a = 2, b=5;
     multiply(a,b); // Ye hai FUNCTION ko Call krna : FUNCTION ko use krna hi function ko call krna kehlata hai

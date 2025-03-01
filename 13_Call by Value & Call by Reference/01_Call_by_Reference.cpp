@@ -1,6 +1,6 @@
 #include <iostream>
 // --Pass_by_Reference-- (Asli swapping) mtlb sach me ghar jake value badal do
-// Isme POINTER ka use hota hai q ki ADDRESS atore krna hai bhai, aur address tph pointer hi store kr sakta hai
+// Isme POINTER ka use hota hai q ki ADDRESS store krna hai bhai, aur address toh pointer hi store kr sakta hai
 
 using namespace std;
 int swap_pointer(int* a, int* b){

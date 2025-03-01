@@ -11,10 +11,9 @@ int add(int x, int y, int z){ //  Ye bhi automatic 3 digit wala input lelega
     cout << "Add fuction for 2 Arguments" << endl;
     return x+y+z;
 }
+
 int main(){
-    
     cout << "The Value of 5 + 10 is :" <<add(5,10)<< endl;
     cout << "The Value of 5 + 10 + 15 is :" <<add(5,10,15)<< endl;
     return 0;
 }
-

@@ -8,7 +8,6 @@ void swap(int a, int b){
     int temp = a; // we can use any variable instead of "temp" like "x"
     a = b;
     b = temp;
-    
 }
 
 int main(){

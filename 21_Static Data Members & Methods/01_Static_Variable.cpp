@@ -10,7 +10,7 @@ using namespace std;
 
 class employee_group{
      int employee_ID; 
-     static int count_employee_num; // This is called "Static data member" of class Aur ye ab CLASS ke hisab se chalege na ki OBJECT q ki object chahe jo bhi iski value static hi rahegi
+     static int count_employee_num; // This is called "Static data member" of class Aur ye ab CLASS ke hisab se chalege na ki OBJECT q ki object chahe jo ho iski value static hi rahegi
 
  public:
     void input_id(void){

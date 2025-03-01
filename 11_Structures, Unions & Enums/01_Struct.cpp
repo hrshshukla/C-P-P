@@ -10,6 +10,7 @@ typedef struct student {
     string name;
     int age;
     float code;
+    
 } stdnt;// Alias Declaration 
 
 int main() {

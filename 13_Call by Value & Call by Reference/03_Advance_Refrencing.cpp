@@ -10,13 +10,15 @@ int &swap_function(int &a, int &b){
      b = temp;
      return a; 
 }
+
+
 int main(){
     int a=12, b=44 ;
     swap_function(a,b);// ab q ki humne return a; kha hai toh : swap_function(x, y) hat ke yaha par "a" ajyega
-    //   "a"                inhort bolu toh  swap_function(x, y) = a , Ab aage...
+    //   "a"                inshort bolu toh  swap_function(x, y) = a , Ab aage...
 
     swap_function(a,b)= 24;
-    // a = 24;              
+    //              a = 24;              
 
     cout<<"The value of (a) is : "<<a;  // Output-> The value of (a) is : 24
 

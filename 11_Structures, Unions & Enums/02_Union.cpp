@@ -25,7 +25,5 @@ int main(){
     cout<< "Payment in Dollars : "  << payment_1.dollars <<  "  <--- this is a garbage value"<<endl; // Ab jab payment hi EURO me hui hai aur DOLLAR bologe to "GRABAGE VALUE" milegi
     cout<< "Payment in Euro : "<< payment_1.euros <<"<--- 904 Euro = $1000"<<endl; // Ab sahi value milegi 
     
-
-
     return 0;
 }

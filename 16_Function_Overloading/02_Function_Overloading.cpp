@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 // Agar function ki input value ko change bhi krde mtlb int --> float 
 // phir bhi value int hi ayegi q ki 
@@ -11,6 +10,7 @@ int add(float x, float y){ // Yaha maine input format float kr dia
     cout << "Using 2 Arguments" << endl;
     return x+y;
 }
+
 int add(int x, int y, int z){ 
     cout << "Add fuction for 2 Arguments" << endl;
     return x+y+z;

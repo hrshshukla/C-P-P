@@ -5,7 +5,7 @@
 // 6! = 720 
 using namespace std;
 int factorial(int n){
-    if (n<=1){ // 1 is chota number accept krega toh 1 return kr dega 
+    if (n<=1){ // 1 se chota number accept krega toh 1 return kr dega 
         return 1;
     }
     

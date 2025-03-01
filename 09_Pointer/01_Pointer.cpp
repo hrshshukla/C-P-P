@@ -19,7 +19,7 @@ int main(){
     cout<< "Address of (b) is " <<c<<endl;
     cout<< "Address of (b) is " <<&b<<endl<<endl;
 
-    cout<< "*c  " <<*c<<endl; // This case : *c point to > *b which is = &a
+    cout<< "*c  " <<*c<<endl; // This case : **c point to > *b which is = &a
     cout<< "Value at Address b" <<**c<<endl; // This Case : **c point to > *b wil point to > (a) which is = 8;
 
 

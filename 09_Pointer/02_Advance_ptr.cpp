@@ -65,7 +65,7 @@ c = c + 1;
 cout  << a << "  " << *c << endl;
 
 Options: (1) Garbage_value 7 (2) 7 Garbage_value (3) 88 (4) 77
-Answer: 7 Garbage_value
+Answer: 7 Garbage_value 
 Explanation: c stores the address of a (and points to the value of a). address that c stores is incremented by 1, so now it points to an unknown value.
 
 

@@ -5,16 +5,14 @@
 // Learning use Double Quote ("") in string, string name = "harsh";
 using namespace std;
 struct student{
-
-        /* data */
-        string name;
-        int age;
-        float code;
-    };
+    string name;
+    int age;
+    float code;
+};
 
 
 int main(){
-    struct student harsh;
+    student harsh;
 
     harsh.name = "harshshukla";
     harsh.age = 18;

@@ -5,7 +5,7 @@
 // they are warpped with the (class) so that we can use them as a (object) 
 
 //  greater<int>() ---> means greater number first 
-//  greater<int>() ---> ek object ki tarha 
+//  greater<int>() ---> ek object ki tarha
 
 using namespace std;
 
