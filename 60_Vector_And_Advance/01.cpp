@@ -17,7 +17,7 @@ int main(){
     vector<int> vector1; // <---- zero lenght vector
     vector<int> vector2(10); // <------ Vector of size (10);
     vector<int> vector4(6, 3); // Output : 3 3 3 3 3 3     Hence, vector.size = (6)
-    vector<int> vector3(vector3); // <----- values inside (vector3) will be copied in (vector3)
+    vector<int> vector3(vector2); // <----- values inside (vector3) will be copied in (vector2)
 
 // Using push_back() & pop_back();   + resize();  
     int element_value, size;  

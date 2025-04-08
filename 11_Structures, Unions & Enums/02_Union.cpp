@@ -17,13 +17,14 @@ using namespace std;
 int main(){
      
     // Creating a union variable
-    union money payment_1;
+    money payment_1;
     
-    payment_1.dollars = 1000;   // Hum Europe me the aur DOLLAR de rhe hai lekin waha to EURO chalta hai
-    payment_1.euros   = 904;    // toh hum ab DOLLAR ko EURO se replace kr dege (Overwrite kr dege)
+    payment_1.euros   = 904;    // we are setting the value of [payment_1.euros]
+    payment_1.dollars = 1000;   // here [payment_1.euros] is overwritten by [payment_1.dollars]
+    // Now we can only access [payment_1.dollars] because union can only let you access one type of value
 
-    cout<< "Payment in Dollars : "  << payment_1.dollars <<  "  <--- this is a garbage value"<<endl; // Ab jab payment hi EURO me hui hai aur DOLLAR bologe to "GRABAGE VALUE" milegi
-    cout<< "Payment in Euro : "<< payment_1.euros <<"<--- 904 Euro = $1000"<<endl; // Ab sahi value milegi 
+    cout<< "Payment in Dollars : "  << payment_1.dollars <<endl; // this will return [payment_1.dollars = 1000;]
+    cout<< "Payment in Euro : "<< payment_1.euros <<endl; // this will also return [payment_1.dollars = 1000;]
     
     return 0;
 }

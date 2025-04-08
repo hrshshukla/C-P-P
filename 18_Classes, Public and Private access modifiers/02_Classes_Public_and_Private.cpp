@@ -7,14 +7,12 @@
 using namespace std;
 class student
 {
-    private:
         int a, b, c;
 
     public:
         int d, e;
         void set_data(int x, int y, int z); // Ye function Class ke anadr declare krdia taki PRIVATE folder ko access kr sake  declare krdia aur baad me isko edit krege 
         void get_data(){
-
             cout << "The value of (a) (b) (c) is :" << a << b<< c<< endl;
         }  
 }; 

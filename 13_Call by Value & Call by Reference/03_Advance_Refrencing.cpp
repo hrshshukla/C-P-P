@@ -1,7 +1,7 @@
 #include <iostream>
 // Ab hum function ka use krke ek variable ki value ko change krege 
 // Then "void swap_function()"
-// Now  int & swap_function() , Ab use krege & function ke naam pe + int function hoga + value return hogi
+// Now  int & swap_function() , Ab use krege [&] function ke naam pe + int function hoga + value return hogi
  
 using namespace std;
 int &swap_function(int &a, int &b){

@@ -6,7 +6,7 @@ using namespace std;
 class Student{
   protected:
     int rollNumber;
-    
+  
   public:
     void inputRollnumber(int num){
         rollNumber = num;

@@ -3,8 +3,8 @@
 using namespace std;
 
 
-int main() {
-    // --- Using Array ---                                          |  --- Using Struct ---
+int main() {/*
+    //          --- Using Array ---                                 |  --- Using Struct ---
                                                                     |
     // Array to store data for 3 numbers                            |  // Define individual structs for each number
     int numbers[3] = {5, 10, 15};                                   |  struct Number {
@@ -26,7 +26,6 @@ int main() {
 }
 
 
-/*
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Aspect                  | Array                                                                                     | Struct                                                                                         
 -------------------------|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,3 +40,4 @@ Saaf Saaf:
 - Struct: Useful for complex data structures with different types of data
 
 Isliye, jab aapko multiple similar items ko manage karna ho, toh array ek better aur simpler option hota hai.
+*/

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 // Struct VS Array
-// You may thing ARRAY looks better, but Struct have better management of data 
+// You may think ARRAY looks better, but Struct have better management of data 
 
 using namespace std;
 

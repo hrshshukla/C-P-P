@@ -8,18 +8,17 @@
         }
  }
 
-
-    Case1:
+Case1:
     class B: public A{
     -----> Order of execution of constructor -> first A() then B()
     };
 
-    Case2:
+Case2:
     class A: public B, public C{
     ------> Order of execution of constructor -> B() then C()  A()
     };
 
-    Case3:
+Case3:
     class A: public B, virtual public C{
     ------> Order of execution of constructor -> C() then B() and A()
     };

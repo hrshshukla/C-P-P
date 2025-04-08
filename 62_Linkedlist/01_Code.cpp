@@ -94,7 +94,7 @@ cout << endl;
 // (4) list4 swap
     list3.swap(list4);
 
-    display(list3); // Ouput : 1 1 1 1 1
+    display(list3); // Ouput : 1  1  1  1  1
     display(list4); // Ouput : 99 99 99 99 99
 
 // ---> clear() : remove all elements

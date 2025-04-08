@@ -24,7 +24,7 @@ int main(){
 //      complex *ptr_c1 = &c1;
 //      complex *ptr_c1 = new complex;
 
- 
+
     complex c1;
     c1.inputData(10,20);
     c1.printData();

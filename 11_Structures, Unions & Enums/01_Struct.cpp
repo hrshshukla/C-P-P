@@ -14,17 +14,18 @@ typedef struct student {
 } stdnt;// Alias Declaration 
 
 int main() {
-    // Using typedef alias to create a struct variable
-    stdnt harsh;
+    // Now I can create struct in TWO ways
+    stdnt harsh1;
+    student harsh2;
 
-    harsh.name = "harshshukla";
-    harsh.age = 18;
-    harsh.code = 101;
+    harsh1.name = "harshshukla";
+    harsh1.age = 18;
+    harsh1.code = 101;
 
     // Displaying the details
-    cout << "Name: " << harsh.name << endl;
-    cout << "Age: " << harsh.age << endl;
-    cout << "Code: " << harsh.code << endl;
+    cout << "Name: " << harsh1.name << endl;
+    cout << "Age: " << harsh1.age << endl;
+    cout << "Code: " << harsh1.code << endl;
 
     return 0;
 }
