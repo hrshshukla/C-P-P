@@ -1,50 +1,85 @@
+// -- isFull() condition will never happen
+
 #include <iostream>
-#include <stack>
+#include <string>
 using namespace std;
 
-class stack{
- public: 
+class stack
+{
+public:
+    string expression;    // string of expression given by user
+    char *arrParenthesis; // stack of parenthesis using char array
     int size;
     int top;
-    char* arrPointer;
 
-    stack(int sizeInput){
-        size = sizeInput;
+    stack(string exp)
+    {
+        expression = exp;
+        size = exp.length();
+        arrParenthesis = new char[size];
         top = -1;
-        arrPointer = new char[size];
     }
 
-    bool isFull(){
-        return (top == size-1); // if stack full then return 1, else return 0;
-        }
-
-    bool isEmpty(){
-    return (top == -1); // if stack empty then return 1, else return 0;
+    bool isEmpty()
+    {
+        return (top == -1); // if stack empty then return 1, else return 0;
     }
 
-    void push(int value){
-        if (isFull()){
-            cout << "Stack is Overflow! cannot push: " << value << endl;
-            return;
-        }
-        arrPointer [++top] = value; // ++top : pre increment
+    void push(char currentLetter)
+    {
+        arrParenthesis[++top] = currentLetter; // ++top : pre increment
     }
 
-    void pop(){
-        if (isEmpty())
+    void pop(char currentLetter)
+    {
+
+        if ((currentLetter == ')' && arrParenthesis[top] == '(') ||
+            (currentLetter == ']' && arrParenthesis[top] == '[') ||
+            (currentLetter == '}' && arrParenthesis[top] == '{'))
         {
-            cout << "Stack is Empty (Underflow)"  << endl;
+            --top; // successfull pop
+        }
+        else
+        {
+            cout << "Expression Unbalanced : ";
             return;
         }
-        --top; // update top to 2nd last value
     }
-  
+
+    int validParanthesis()
+    {
+        // Pushing and Poping values
+        for (char currentLetter : expression)
+        {
+            if (currentLetter == '(' || currentLetter == '[' || currentLetter == '{')
+            {
+                push(currentLetter);
+            }
+            else if (currentLetter == ')' || currentLetter == ']' || currentLetter == '}')
+            {
+                if (isEmpty())return 0;
+
+                pop(currentLetter);
+            }
+        }
+
+        // if any parenthesis is left in stack then, invalid parenthesis
+        return isEmpty(); // true = valid paranthesis, false = invalid parenthesis
+    }
+
+    // destructor
+    ~stack()
+    {
+        delete[] arrParenthesis;
+    }
 };
 
-int main(){
+int main()
+{
 
-    
+    stack expOne("[(24)");
 
-    
+    expOne.validParanthesis() ? cout << "Valid Prarenthesis" : cout << "Invalid Prarenthesis";
+
     return 0;
 }
