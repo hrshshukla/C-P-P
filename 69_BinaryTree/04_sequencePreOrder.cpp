@@ -9,6 +9,7 @@ class Node{
 
     Node(int data){
         this->data = data;
+        left = right = NULL;
     }
 };
 
@@ -32,5 +33,6 @@ int main(){
     
     Node* root = createTree(PreOrder_array);
     cout << root->data << endl;
+
     return 0;
 }
