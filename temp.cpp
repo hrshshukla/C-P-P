@@ -1,30 +1,58 @@
+//
+
 #include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
+
 using namespace std;
 
-struct Node {
-    int data;
-    Node* left;
-    Node* right;
-    Node(int v): data(v), left(nullptr), right(nullptr) {}
-};
+// Step 1: Create the graph as a 7x7 adjacency matrix
+int graph[7][7] = {                //   0—— 1
+        {0,1,1,1,0,0,0},           //   | \ |
+        {1,0,1,0,0,0,0},           //   3—— 2
+        {1,1,0,1,1,0,0},           //    \ /
+        {1,0,1,0,1,0,0},           //     4
+        {0,0,1,1,0,1,1},           //    / \ 
+        {0,0,0,0,1,0,0},           //   5   6
+        {0,0,0,0,1,0,0}
+    };
 
-int main() {
-    // — build your tree however you like —
-    Node* root = new Node(10);
-    root->left = new Node(5);
-    root->right = new Node(15);
-    root->left->left   = new Node(3);
-    root->left->right  = new Node(7);
-    root->right->left  = new Node(12);
-    root->right->right = new Node(18);
-    root->left->left->left  = new Node(1);
-    root->left->left->right = new Node(4);
-    root->left->right->right= new Node(9);
+int visited[7] = {0,0,0,0,0,0,0};  // 0 = not visited, 1 = visited
+int visitedSize = sizeof(visited) / sizeof(visited[0]);
 
-    // **ONLY** this prints the diagram—no extra output
-    printTree(root);
+void DFS(int crrSourceNode){
+
+    visited[crrSourceNode] = 1;
+    cout << crrSourceNode << " ";
+
+    for (int neighbour = 0; neighbour < visitedSize; neighbour++)
+    {
+        if (graph[crrSourceNode][neighbour] == 1 && visited[neighbour] == 0)
+        {
+            DFS(neighbour);
+        }
+    }
+}
+    
+    
+int main(){
+
+    DFS(0);
+
+// -> Working : 
+
+// Call DFS(0)
+//     Call DFS(1)
+//         Call DFS(2)
+//             Call DFS(3)
+//                 Call DFS(4)
+//                     Call DFS(5) — (no more neighbors)
+//                     Return to 4
+//                     Call DFS(6) — (no more neighbors)
+//                     Return to 4
+//                 Return to 3
+//             Return to 2
+//         Return to 1
+//     Return to 0
+// Done
+
     return 0;
 }

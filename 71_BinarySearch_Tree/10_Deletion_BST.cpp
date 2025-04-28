@@ -67,7 +67,7 @@ Node* deleteNode(Node* root, int inputValue){
     // search for the node to be deleted, in right and left subtree (recursively) 
     if (inputValue < root->data)
     {
-        root->left = deleteNode(root->left, inputValue);
+        root->left = deleteNode(root->left, inputValue); // the node returned form this, will become the left child of the current root 
     }
     else if (inputValue > root->data)
     {
