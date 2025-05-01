@@ -1,6 +1,16 @@
 #include <iostream>
 #include <map>
 #include <string>
+// Hash Tables : https://youtu.be/FsfRsGFHuv4
+
+// Time Complexity : 
+
+// -- Ordered Map
+// -> Searching & Fetching: O(log n)  (best, average, worst case)
+
+// -- UnOrdered Map
+// -> Searching & Fetching: O(1)  (best, average case),   worst case -> O(n)  because of collisions = creation of linked list 
+
 // Map store values like excel sheet (rows & columns)
 // ----> Using : map.insert()
 
@@ -10,20 +20,21 @@ static int counter = 0;
 void display(map<string, int> map1){
     cout << endl << "Map No."<< ++counter << endl;
 
+// declear iterator ------>  map<string, int> :: iterator iterMap;
     map<string, int> :: iterator iterMap;
+
     for ( iterMap = map1.begin(); iterMap != map1.end(); iterMap++)
     {
-        cout << (*iterMap).first << " : "<< (*iterMap).second << endl;
+        cout << iterMap->first << " : "<< (*iterMap).second << endl;
     }
 }   
 
 int main(){
     map<string, int> marksMap;
     marksMap ["Harsh "] = 19;
-    marksMap ["Dumbledoor "] = 99;
+    marksMap ["Dumbledoor "] = 100;
     marksMap ["Harry Potter "] = 89;
 
-// declear iterator ------>  map<string, int> :: iterator iterMap;
     display(marksMap);
 
 /*                  Map No. 1
@@ -52,7 +63,8 @@ int main(){
     | Voldemort      | 98                 |
     ---------------------------------------
 */
-    
+    marksMap.insert({"GrindelWald ", 99});
+    display(marksMap);
     
     return 0;
 }

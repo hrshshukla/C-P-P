@@ -4,6 +4,8 @@
 // -> we cannot create an array[10⁷] inside -----> int main()
 // -> but we can decalre it as global variable outside the int main() 
 
+// Solution : Hashmap
+
 #include <iostream>
 using namespace std;
 
@@ -17,7 +19,7 @@ int count(int inputNum, int arr[], int size){
 
     return hash[inputNum];
 }
-
+  
 
 int main(){
     int arr[] = {10, 20, 20, 10, 10, 50};

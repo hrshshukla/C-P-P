@@ -5,7 +5,7 @@
 
 // Abhi tak hum map me (2-Column) me hi bas data store kr sakte the
 // But with the help of (tuple) specifically (make_tubple) can help to store more than (2-Column)
-// And use get<0> to access the columns
+// And use get<0> to access the columns where : get<0> means column 0 of tuple 
 
 using namespace std;
 
@@ -25,7 +25,7 @@ int main() {
     // map with tuple as value to store multiple fields
     map<string, tuple<int, string, int>> personInfoMap;
     
-    personInfoMap["Harsh"] = make_tuple(19, "Student", 44);
+    personInfoMap["Harsh"] = make_tuple(19, "Nothing", 44);
     personInfoMap["Dumbledoor"] = make_tuple(99, "Headmaster", 44);
     personInfoMap["Harry Potter"] = make_tuple(89, "Wizard", 44);
 
