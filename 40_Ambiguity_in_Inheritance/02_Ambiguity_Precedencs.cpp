@@ -1,8 +1,9 @@
 #include <iostream>
 // If a (class Base) has function say() and 
-// from (Class Base) Another class is derived named as (class derived) which has its own say() function
+// from (Class Base), Another class is derived named as (class derived) which has its own say() function
 // then (Class derived) say() function will run 
 
+// this is also called as method overriding
 using namespace std;
 
 class baseClass{

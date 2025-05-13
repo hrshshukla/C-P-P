@@ -5,9 +5,9 @@ using namespace std;
 class Stack{
  private:
     int size;
-    int top;
     int* arrPointer;
-
+    int top;
+    
  public:
 
 // Constructor

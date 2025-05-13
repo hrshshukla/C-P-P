@@ -32,12 +32,12 @@ class baseClass_2{
 class derivedd : public baseClass_1, public baseClass_2{
      
  public:
-    //   Case 1 : Not defining which base class greet function to use.
+    // Case 1 : Not defining which base class greet function to use.
 
+    // Case 2
     void greet(){
-    baseClass_1 :: greet();
-    }
-     
+      baseClass_1 :: greet();
+    }  
 };
 
 int main(){

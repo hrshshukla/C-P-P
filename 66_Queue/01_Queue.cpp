@@ -33,11 +33,11 @@ class Queue{
     }
 
     int deQueue(){
-        if (!isEmpty()) {
-            return arr[++front];
+        if (isEmpty()) {
+            cout <<"Queue is empty" << endl;
+            return;
         }
-        cout <<"Queue is empty" << endl;
-        return -1;
+        return arr[++front];
     }
 
     ~Queue(){

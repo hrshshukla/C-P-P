@@ -51,7 +51,7 @@ public:
         count++;
     }
 
-
+    
     // Delete from front
     void dequeueFront() {
         if (isEmpty()) {
@@ -102,6 +102,8 @@ int main() {
     dq.enqueueFront(5);
     dq.enqueueFront(1);
     dq.enqueueFront(99);
+    dq.print();   //  99 1 5 10 20
+
     
     dq.dequeueFront();
     dq.dequeueFront();
@@ -109,7 +111,7 @@ int main() {
     dq.dequeueFront();
     dq.dequeueFront();
     
-    dq.print();   //  5 10 20
+    dq.print();   //  No Value Left
 
     return 0;
 }

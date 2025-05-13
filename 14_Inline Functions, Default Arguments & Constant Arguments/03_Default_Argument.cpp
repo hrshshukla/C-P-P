@@ -8,7 +8,6 @@ int intrest(int money, float interest_rate=0.10){ // 0.10 = 10% interest rate
 }
 int main(){
     int money=10000;
-   
 
     intrest(money);// We are only giving "money" value because "interest_rate value" is already defined
     cout<< "Bank Balance with 10% After 1 year = "<<intrest(money)+money<<endl;

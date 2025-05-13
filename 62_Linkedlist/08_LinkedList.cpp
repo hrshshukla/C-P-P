@@ -19,7 +19,6 @@ class Node{
 class linkedList{
 public:
     Node* head, *tail;
-    int totalSize = 0;
 
     linkedList(){
         head = tail = NULL;
@@ -29,12 +28,10 @@ public:
         Node* newNodePointer = new Node(value);
         if (head == NULL){
             head = tail = newNodePointer;
-            totalSize++;
             return;
         }
         newNodePointer->next = head;
         head = newNodePointer;
-        totalSize++;
     }
     
     void pushBack(int value){ // (i) With tail : O(1)   (ii) Without tail --> O(n)
@@ -42,13 +39,11 @@ public:
 
         if (head == NULL){
             head = tail = newNodePointer;
-            totalSize++;
         }
         else{
             tail->next = newNodePointer;
             tail = newNodePointer;
         }
-        totalSize++;
     }
 
     void pushInBetween(int value, int position){
@@ -69,8 +64,6 @@ public:
         }
         newNodePointer->next = temp->next;
         temp->next = newNodePointer;
-        totalSize++;
-
     }
 
     void popFront(){
@@ -81,7 +74,6 @@ public:
         Node* temp = head;
         head = head->next;
         delete temp;
-        totalSize--;
     }
     
     void popInBetween(int position){
@@ -100,7 +92,6 @@ public:
         Node* toDelete = temp->next; // targetNode = Node to be deleted
         temp->next = (toDelete)->next;
         delete toDelete;
-        totalSize--;
     }
 
     void popBack(){
@@ -115,7 +106,6 @@ public:
         temp->next = NULL;
         delete tail;
         tail = temp;
-        totalSize--;
     }
 
     void print(){
@@ -148,7 +138,6 @@ int main(){
     list1.pushInBetween(75,2);
     
     list1.print();
-    cout << "Size : " << list1.totalSize << endl;
 
     return 0;
 }

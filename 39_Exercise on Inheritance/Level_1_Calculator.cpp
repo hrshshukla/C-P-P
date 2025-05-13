@@ -2,24 +2,7 @@
 #include <string>
 #include <cmath>
 
-/*
-maine is code me galti ki hai phir bhi mai ye code upload kruga
-Mistakes :
- [*1] Maine 3 options diye user ko choose krne ke jabki 3 ka kaam hybrid akela kr sakta hai,
-        wo sare functions, methods jo (Simple) aur (Scientific) me hai wo (Hybrid) me bhi hai 
-            Toh simply user se input mai seedha (hybrid) class me leleta aur answer return kr deta 
- 
- and other small mistakes...
 
-Concepts used :
- * switch case
- * if-else
- * recursive & recursion
- * function overloading
- * class + derived class + multiple inheritance
- * constructor
-
-*/
 using namespace std;
 
 class simpleCalculator{
@@ -107,12 +90,8 @@ class scientificCalculator{
         }
 };
 
-class hybridCalculator : public simpleCalculator, public scientificCalculator{
-     
- public:
-    
-     
-};
+class hybridCalculator : public simpleCalculator, public scientificCalculator{};
+
 int main(){
     cout << "Choose any one calculator: \n"
             <<"press (1) for Simple Calculator \n"
@@ -151,7 +130,7 @@ int main(){
         cout << "Enter Number : " << "\t";
         cin>>num_1;
 
-        cout << "Choose anyone (1) factorial \n (2) sin \n (3) cos \n (4) tan \n" << "\t";
+        cout << "Choose anyone \n (1) factorial \n (2) sin \n (3) cos \n (4) tan \n";
         cin>>oprtr;
 
 

@@ -5,9 +5,10 @@ using namespace std;
 
 // Whereas, (derived_class) pointer can access the (members and functions) of (base_class) because it is inherited from (base_class)
  
+// the pointer of base class only calls the function of base class even if 
+// the pointer of base class is pointing to derived class 
 
 class BaseClass{
-
  public:
      int var_base = 0;
 

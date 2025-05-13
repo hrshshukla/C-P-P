@@ -7,7 +7,7 @@ int main(){
     for (int i = 0; i < 10; i++){
         static int c = 0; 
         c = c+1;
-        cout<< "The value of (c) in this iteration is : "<<c<<endl;
+        cout<< "The value of (c) in iteration " << i << " is : "<<c<<endl;
     } 
     
     return 0;

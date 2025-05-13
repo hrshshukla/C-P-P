@@ -26,7 +26,7 @@ class marks{
 //  marks(int num1, int num2) : a(num1), b( num1 + num2 ) ---->     a = 2     b = 2 + 3
 //  marks(int num1, int num2) : a(num1), b( a + num1 )    ---->     a = 2     b = 2 + 3 
 
-//  marks(int num1, int num2) : b( num2 ), a(num1 + b)   ---->      b = 84375   a = 2  because (declaration hierarchy) error, SOLUTION : intialize (b) then (a)
+//  marks(int num1, int num2) : b( num2 ), a(num1 + b)   ---->      b = 84375   a = 2 error because (declaration hierarchy) , SOLUTION : intialize (b) then (a)
     {
         cout << "The value of a is : " << a<< endl;
         cout << "The value of b is : " << b<< endl;

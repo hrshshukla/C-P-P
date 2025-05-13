@@ -24,9 +24,9 @@ class CWHvideos : public CWH{
      float videoLength;
 
  public:
-     CWHvideos(string title, float videoLength, float rating):CWH(title, rating){
+    CWHvideos(string title, float videoLength, float rating):CWH(title, rating){
         this->videoLength = videoLength;
-     }
+    }
 
     void display(void){
         cout <<endl<< "Welcome to CWHvideos " << endl;

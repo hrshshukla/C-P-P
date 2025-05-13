@@ -18,7 +18,6 @@ class Node{
 class CircularLinkList{
  public:
     Node *head, *tail;
-    int totalSize = 0;
 
     CircularLinkList(){
         head = tail = NULL;
@@ -30,11 +29,11 @@ class CircularLinkList{
         {
             head = tail = newNodePointer;
             tail->next = head;
+            return;
         }
         newNodePointer->next = head;
         head = newNodePointer;
         tail->next = head;
-        totalSize++;
 
     }
 
@@ -49,7 +48,6 @@ class CircularLinkList{
         newNodePointer->next = head;
         tail->next = newNodePointer; 
         tail = newNodePointer; 
-        totalSize++;
     }
 
     void popFront(){
@@ -66,7 +64,6 @@ class CircularLinkList{
         tail->next = head; // this is important 
 
         delete temp;
-        totalSize--;
     }
 
     void popBack(){
@@ -87,7 +84,6 @@ class CircularLinkList{
         tail = temp; 
         tail->next = head;
 
-        totalSize--;
     }
     
     void print(){

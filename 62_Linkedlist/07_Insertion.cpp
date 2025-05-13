@@ -67,10 +67,10 @@ class List{
         for (int i = 0; i < position-1; i++){ // if : position = 3 then, List index 2 
             temp = temp->next;              // ((temp->next)->next) = Third Node
         }
+
         newNodePointer->next = temp->next; 
         temp->next = newNodePointer;
     }
-
 };
 
 int main(){

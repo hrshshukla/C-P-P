@@ -1,6 +1,9 @@
 #include <iostream>
 // Make (Class student) -------> [(Class Test) + (Class Sports)] --------> (Result)
 
+// When a base class is inherited among multiple derived classes using virtual keyword to avoid duplication and ambiguity 
+// then that base class is called virtual base class 
+
 using namespace std;
 
 class Student{
@@ -22,7 +25,7 @@ class test: virtual public Student{
     float maths, physics;
 
   public:
-        void inputMarks(float num1, float num2){
+    void inputMarks(float num1, float num2){
         maths = num1;
         physics = num2;
     }
@@ -53,7 +56,7 @@ class result : public test, public sports{
 
  public:
     
-    void printResult(void){
+    void printResult(){
         result = (maths + physics + score);
         printRollnumber();
         printMarks();
@@ -66,7 +69,7 @@ int main(){
     result harsh;
 
     // if we dont use (virtual-base-class) feature then 
-    harsh.inputRollnumber(45);  // Output ERROR : request for member ‘inputRollnumber’ is ambiguous
+    harsh.inputRollnumber(45);  // Output ERROR : Ambiguity for ‘inputRollnumber’ function 
     harsh.inputMarks(80.34, 89.44);
     harsh.inputScore(9.8);
     harsh.printResult();

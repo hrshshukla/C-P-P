@@ -5,7 +5,7 @@
 using namespace std;
 
 class Value{
-     int a = 0; // Ye (a) ki default value hai jo ki baad me overwrite hojayegi baad me 
+     int a = 0; // Ye (a) ki default value hai jo ki overwrite hojayegi baad me 
 
 public:
      Value (){}
@@ -32,11 +32,11 @@ int main(){
     Value obj_1(20); 
 
 // Case 1
-    Value obj_2(obj_1); // Intialization + Declaration = Direct Passing Object as a ARGUMENT
+    Value obj_2(obj_1); // Passing Object as a ARGUMENT
     obj_2.Print();      // Successfull
 
 // Case 2
-    Value obj_4 = obj_1;  // Initialization + Declaration --> Copy Constructor Invoke hoga 
+    Value obj_4 = obj_1;  // --> Copy Constructor Invoke hoga 
     obj_4.Print();        // Successfull
 
 // Case 3
@@ -46,7 +46,6 @@ int main(){
 
 
 // Case 4
-    
     Value obj_3;          // Declaration
     obj_3 = Value(obj_1); // Initialization --> Copy Constructor Invoke hoga 
     obj_3.Print();        // Successfull
